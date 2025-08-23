@@ -1,0 +1,92 @@
+/* Базові стилі (мобільна версія 320px) */
+.levels-section {
+    padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.section-title,
+.section-subtitle,
+.levels-footer {
+    text-align: center;
+    color: #000;
+    padding-bottom: 24px;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+.section-subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.45;
+}
+
+.levels-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.levels-item {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 15px;
+    width: 100%;
+    max-width: 280px;
+}
+
+.icon {
+    width: 24px;
+    height: auto;
+}
+
+.levels-footer {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.45;
+}
+
+/* Десктопна версія (1200px+) */
+@media screen and (min-width: 1200px) {
+    .levels-item {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.66667;
+    color: #000;
+    
+  }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-subtitle {
+        font-size: 24px;
+    }
+
+    .levels-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .levels-item {
+        max-width: 661px;
+    }
+
+    .icon {
+        width: 32px;
+    }
+
+    .levels-footer {
+        font-weight: 400;
+        font-size: 24px;
+    }
+}
