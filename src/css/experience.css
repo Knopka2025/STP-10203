@@ -1,0 +1,117 @@
+.mob-title-wrap{
+    display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: column;
+gap: 24px;
+margin-bottom: 24px;
+}
+
+.mob-tittle-wrapper {
+font-weight: 600;
+font-size: 24px;
+line-height: 1.25;
+text-align: center;
+color: #000;
+}
+
+.mob-subtitle-wrapper {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.45;
+text-align: center;
+color: #000;
+}
+
+.wrap-list{
+    display: flex;
+
+justify-content: center;
+flex-direction: column;
+gap: 24px;
+padding-bottom: 24px;
+width: 303px;
+}
+
+.wrap-item-text {
+font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #000;
+    
+}
+
+
+.android-wrapper{
+display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+
+    border: 1px solid #000;
+        border-radius: 24px;
+        padding: 20px 32px;
+        width: 150px;
+        height: 70px;
+
+    background: #c5ffc1;
+    height: 70px;
+}
+
+.booking-wrapper{
+    display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 10px;
+    
+    border: 1px solid #000;
+    border-radius: 24px;
+    padding: 20px 32px;
+    width: 150px;
+    height: 70px;
+    background: #b9d4ff;
+}
+
+.no-stopping-wrapper{
+    display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 10px;
+     border: 1px solid #000;
+        border-radius: 24px;
+        padding: 20px 32px;
+        width: 150px;
+        height: 70px;
+        background: #ffcece;
+}
+
+.element-hour-service-wrapper{
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+    border: 1px solid #000;
+    border-radius: 24px;
+    padding: 20px 32px;
+    width: 150px;
+    height: 70px;
+ background: #8cd3ff;
+}
+
+.responsive-wrapper{
+    display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 10px;
+        border: 1px solid #000;
+        border-radius: 24px;
+        padding: 20px 32px;
+        width: 150px;
+        height: 70px;
+        background: #8dff89;
+}
