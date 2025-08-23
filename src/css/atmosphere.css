@@ -1,0 +1,147 @@
+/* Базові стилі для мобільного свайпера */
+.slider-container-events {
+    position: relative;
+}
+
+/* Кнопки свайпера */
+.arrows {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.arrows button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* При ширині більше 375px ховаємо свайпер і стрілки */
+@media (min-width: 376px) {
+    .swiper-events {
+        display: block !important;
+        /* просто відображаємо всі слайди як список */
+    }
+
+    .arrows {
+        display: none;
+    }
+
+    .swiper-wrapper {
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .swiper-slide {
+        width: auto !important;
+    }
+
+    .swiper-pagination {
+        display: none !important;
+    }
+}
+
+.wrap-title{
+    display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 24px;
+        padding-bottom: 26px;
+}
+
+.section-title {
+font-weight: 600;
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+    color: #000;
+}
+
+.section-subtitle {
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.45;
+        text-align: center;
+        color: #000;
+        padding-bottom: 26px;
+}
+
+.swiper-img{
+    border: 1px solid #000;
+        border-radius: 15px;
+       
+        width: 200px;
+        height: 212px;
+}
+.event-text {
+    font-weight: 400;
+        font-size: 20px;
+        line-height: 1.45;
+        text-align: center;
+        color: #000;
+        width: 193px;
+}
+
+@media screen and (min-width: 1200px){
+    .visuals-section {
+        display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            margin: auto;
+    }
+    
+        .wrap-tittle {}
+    
+        .section-title {
+            font-weight: 600;
+                font-size: 32px;
+                line-height: 1.3125;
+                text-align: center;
+                color: #000;
+        }
+    
+        .section-subtitle {
+            font-weight: 500;
+                font-size: 24px;
+                line-height: 1.25;
+                color: #000;
+                padding-bottom: 40px;
+        }
+    
+        .slider-container-events {}
+    
+        .swiper {}
+    
+        .swiper-events {
+            
+        }
+    
+        .swiper-wrapper {}
+    
+        .events-list {
+            gap: 64px;
+            
+        }
+    
+        .swiper-slide {}
+    
+        .swiper-img {}
+    
+        .event-content {}
+    
+        .event-text {}
+    
+        .slider-controls {}
+    
+        .swiper-pagination {}
+    
+        .arrows {}
+    
+        .swiper-events-button-prev {}
+    
+        .swiper-events-button-next {}
+}
