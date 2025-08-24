@@ -1,7 +1,11 @@
 .header {
 	position: sticky;
 	top: 0;
-	width: 100%;
+	left: 0;
+	right: 0;
+	width: 100vw;
+	max-width: 100%;
+	margin: 0 auto;
 	z-index: 100;
 	line-height: 120%;
 	margin-bottom: 24px;
@@ -9,7 +13,7 @@
 
 .header .container {
 	width: 100%;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 }
 
