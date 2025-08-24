@@ -1,0 +1,87 @@
+.modal-menu {
+  font-weight: 400;
+  font-size: 18px;
+  position: absolute;
+  top: 0px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  justify-content: center;
+  align-items: start;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibily 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.modal-menu.is-open {
+  padding-top: 70px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  /*animation: fadeInDown 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);*/
+  background: rgba(0, 0, 0, 0.1);
+  background-image: url("../img/header/backdrop.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  z-index: 90;
+}
+
+.nav-modal {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.list-wrapper {
+  position: relative;
+  width: 251px;
+  height: 383px;
+  padding: 56px 64px;
+  background-image: url("../img/header/menu.png");
+  background-repeat: no-repeat;
+  z-index: 110;
+}
+
+.modal-menu.is-open .nav-modal {
+  opacity: 1;
+  visibility: visible;
+  animation: fadeInDown 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 1500;
+}
+
+.nav-modal-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  line-height: normal;
+}
+
+.modal-menu-icon {
+  stroke: black;
+  fill: var(--main-yellow);
+}
+
+@media only screen and (min-width: 1200px) {
+  .modal-menu {
+    display: none;
+    z-index: 0;
+    pointer-events: none;
+  }
+}
