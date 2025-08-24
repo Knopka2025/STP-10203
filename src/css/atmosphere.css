@@ -32,17 +32,19 @@
         display: flex !important;
         flex-wrap: wrap;
         gap: 24px;
+    padding-left: 16px;
     }
 
     .swiper-slide {
         width: auto !important;
+        
     }
 
     .swiper-pagination {
         display: none !important;
     }
 }
-
+/* Styles */
 .wrap-title{
     display: flex;
         align-items: center;
@@ -133,7 +135,9 @@ font-weight: 600;
     
         .event-content {}
     
-        .event-text {}
+        .event-text {
+            margin-bottom: 40px;
+        }
     
         .slider-controls {}
     
