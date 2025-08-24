@@ -12,8 +12,8 @@ function initMobileSwiper() {
   if (screenWidth <= 375 && !mobileSwiper) {
     mobileSwiper = new Swiper('.swiper-events', {
       modules: [Navigation, Pagination],
-      slidesPerView: 1.2,       // 1 слайд + трохи наступного
-      spaceBetween: 12,         // відстань між картинками
+      slidesPerView: 1.2,       //? 1 слайд + трохи наступного
+      spaceBetween: 12,         //? відстань між картинками
       speed: 350,
       watchOverflow: true,
       navigation: {

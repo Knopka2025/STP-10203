@@ -1,4 +1,9 @@
-
+.frame{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
 
 .mob-title-wrap{
     display: flex;
@@ -25,95 +30,71 @@ text-align: center;
 color: #000;
 }
 
-.wrap-list{
+.wrap-list {
+list-style: none;
+    padding: 0;
+    margin: 0 auto;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
 
-justify-content: center;
-flex-direction: column;
-gap: 24px;
-padding-bottom: 24px;
-width: 303px;
+.wrap-item {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 150px;
+        /* або auto, якщо потрібно адаптивно */
+        text-align: center;
+}
+
+
+.img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 .wrap-item-text {
-font-weight: 600;
-    font-size: 24px;
-    line-height: 1.2;
-    color: #000;
-    
+    font-size: 16px;
+    line-height: 1.4;
 }
 
-
-.android-wrapper{
-display: flex;
+.line {
+    display: flex;
+    flex-direction: column;
+    
     align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
+    justify-content: center;
     gap: 10px;
 
-    border: 1px solid #000;
-        border-radius: 24px;
-        padding: 20px 32px;
-        width: 150px;
-        height: 70px;
-
-    background: #c5ffc1;
-    height: 70px;
-}
-
-.booking-wrapper{
-    display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: row;
-        gap: 10px;
-    
     border: 1px solid #000;
     border-radius: 24px;
     padding: 20px 32px;
     width: 150px;
-    height: 70px;
-    background: #b9d4ff;
 }
 
-.no-stopping-wrapper{
-    display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: row;
-        gap: 10px;
-     border: 1px solid #000;
-        border-radius: 24px;
-        padding: 20px 32px;
-        width: 150px;
-        height: 70px;
-        background: #ffcece;
+.wrap-list {}
+
+.wrap-item {}
+
+.img {}
+
+.wrap-line-one {
+background: #c5ffc1;
+}
+.wrap-line-two {
+background: #b9d4ff;
+}
+.wrap-line-three{
+background: #ffcece;
+}
+.wrap-line-four{
+background: #8cd3ff;
+}
+.wrap-line-five{
+background: #8dff89;
 }
 
-.element-hour-service-wrapper{
-display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 10px;
-    border: 1px solid #000;
-    border-radius: 24px;
-    padding: 20px 32px;
-    width: 150px;
-    height: 70px;
- background: #8cd3ff;
-}
-
-.responsive-wrapper{
-    display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: row;
-        gap: 10px;
-        border: 1px solid #000;
-        border-radius: 24px;
-        padding: 20px 32px;
-        width: 150px;
-        height: 70px;
-        background: #8dff89;
-}
+.wrap-item-text {}
