@@ -1,0 +1,108 @@
+.cookies {
+	font-family: "Montserrat", sans-serif;
+	position: fixed;
+	bottom: 0;
+	background-color: #fff;
+	width: 100%;
+	z-index: 80;
+	color: inherit;
+}
+
+.cookies .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 60px 11px 60px 12px;
+}
+
+.cookie-title {
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 75%;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.cookie-text {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 145%;
+	margin-bottom: 40px;
+}
+
+.cookie-button-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	gap: 16px;
+}
+
+.cookie-button {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 0%;
+	border: 1px solid #000;
+	border-radius: 15px;
+	padding: 20px 5px;
+	width: 144px;
+	height: 68px;
+}
+
+.primary-button {
+	background: #caebff;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+	box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.primary-button:active {
+	box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.8);
+}
+
+.secondary-button {
+	background: #ffc482;
+	box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+	box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.secondary-button:active {
+	box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (min-width: 1200px) {
+
+	.cookies .container {
+		padding: 60px 16px 80px 16px;
+	}
+
+	.cookie-title {
+		font-size: 40px;
+		padding-bottom: 8px;
+	}
+
+	.cookie-text {
+		font-size: 20px;
+		line-height: 145%;
+
+	}
+
+	.cookie-button-wrapper {
+		gap: 24px;
+	}
+
+	.cookie-button {
+		border: 1px solid #000;
+		border-radius: 15px;
+		padding: 20px 40px;
+		width: 256px;
+		height: 68px;
+	}
+}
