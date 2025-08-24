@@ -35,6 +35,13 @@ main:has(.back-link) {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    scroll-padding-top: 110px;
+  }
 }
 
 body.locked {
