@@ -74,10 +74,18 @@
 	overflow: hidden;
 	box-shadow: 0 5px 4px 5px rgba(0, 0, 0, 0.15);
 	transform: rotate(-19deg);
+	/* приклад, підганяй під дизайн */
+	/*background-color: #ffc482;
+	background-image: url("../img/hero/Photo-mobile.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;*/
 }
 
 .hero-img {
-	height: 100%;
+	display: block;
+	height: 101%;
+	/*object-fit: cover;*/
 }
 
 @media only screen and (min-width: 1200px) {
