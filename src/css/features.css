@@ -1,0 +1,99 @@
+.features .container {
+	font-family: "Montserrat", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.features-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: start;
+	border-radius: 10px;
+	width: 288px;
+	background: #ffc482;
+	padding: 26px 0 26px 0;
+}
+
+.features-title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 125%;
+	text-align: center;
+	margin-bottom: 2px;
+}
+
+.features-description {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 145%;
+	text-align: center;
+	width: 260px;
+	margin-bottom: 24px;
+}
+
+.features-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	/* 3 колонки */
+	gap: 24px;
+	text-align: center;
+}
+
+.feature-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.feature-icon {
+	width: 40px;
+	height: 40px;
+	margin-bottom: 8px;
+}
+
+.feature-title {
+	font-size: 1rem;
+	margin: 0 0 8px;
+}
+
+.feature-arrow {
+	font-size: 1.2rem;
+	margin-bottom: 8px;
+}
+
+.feature-desc {
+	font-size: 0.9rem;
+	margin: 0;
+	max-width: 180px;
+	/* щоб текст не розлазився занадто */
+}
+
+
+@media (min-width: 1200px) {
+	.features-container {
+		width: 100%;
+	}
+
+	.features-list {
+		grid-template-columns: 100px 258px 165px 1fr;
+		/* лінійка як обговорювали */
+		gap: 16px;
+		text-align: left;
+	}
+
+	.feature-item {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.feature-arrow {
+		transform: rotate(0);
+		margin: 0;
+	}
+}
