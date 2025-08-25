@@ -31,7 +31,7 @@
     <script type="module" crossorigin src="/STP-10203/index.js"></script>
     <link rel="modulepreload" crossorigin href="/STP-10203/assets/vendor-BIhqhViJ.js">
     <link rel="stylesheet" crossorigin href="/STP-10203/assets/vendor-wjhWB3DI.css">
-    <link rel="stylesheet" crossorigin href="/STP-10203/assets/styles-Dw3c919W.css">
+    <link rel="stylesheet" crossorigin href="/STP-10203/assets/styles-C5EosFhf.css">
   </head>
   <body>
     <header class="header">
@@ -123,22 +123,37 @@
 				Merge to discover unique species</br>Create thriving jungle habitats</br>Unlock
         daily surprises & rewards
       </p>
-			<div class="hero-picture">
+			<!--<div class="hero-picture">-->
 				<picture>
 					<source
-						srcset="/STP-10203/assets/Photo-CBAOI4e3.jpg 1x, /STP-10203/assets/Photo@2x-jZJo1979.jpg 2x"
+						srcset="../img/hero/Photo.png 1x, ../img/hero/Photo@2x.png 2x"
+						media="(min-width: 1200px)"
+					/>
+					<source
+						srcset="../img/hero/Photo-mobile.png 1x, ../img/hero/Photo-mobile@2x.png 2x"
+						media="(max-width: 1999px)"
+					/>
+					<img
+						src="../img/hero/Photo-mobile.png"
+						alt="Paradise Paws Logo"
+						class="hero-picture hero-img"
+					/>
+				</picture>
+			<!--</div>-->
+      <a class="hero-button" href="#"
+        >
+				<picture>
+					<source
+						srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGjSURBVHgBlZM9S0JRGMefczw3ehkKysxquA19hJqjGiuolmqp1qYcW8qGKFq8Ds0ZEdFSBi1Bog1BkKDQB/AulYKgZnotj+fpesEwvV71Pxw4L7/feScTl0sbSImHIKZRgDe8dq1AGyGT51sxISXkvwZAFQG3wys3ty0Jpo5VzA0fArLk/w5Anw3F/vOqX7UUTB98oZCSYCYxgmSfF7gS3fSnzQTUKIoD0PO+A4QPmEyBe1IXjUxeLa83FDSTIBDZQfO+2H1vTAt2yqYCK4nTloeT3icYteVkVuKxn4B0WhHRuiXVSCqwk+ardoUbNlEK8gdpvU5QLRkR3XVwlUTWr1sxFZTj+ORwdJcAR5Y3GqKfDaZNBXYtDrsRF/QnUpC9GAeR6TDDdZi6aSPYXogb9TJcJyGgsGxpjM0Wz6gVXElFghoL6cc+Jc1wF1kE42GxZrCxWAT1O8NcHfMFf20fs4b1H4qg5AX3joWipk+ZNYL1z+TnJe5yhqIqWIS8zi2kHNpHX9WsISKI2x58eYQWwga1t01E6iEE+wQQ91Ag7IU28gsmod7arxWVLAAAAABJRU5ErkJggg== 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALPSURBVHgBtZc/TNRQHMd/v17PQ8TkFogkDnV2OaMYBkwQjYmLgpKIEgNE3WVwpgwmjuBkdLhjOh2Mx2ai2BIZjEJglMRI44Lxb8U/EPrnZ99B4e64a/ve9T7JNXl97933098vbVoEj878gGKjlQWEDBCkvVMFmZzRN1cLBjQYLIZL1uJ2cPkkUC5B7ngjRSQHrbFq4QwCHHZQ0k4+uTwEDQK77j+njbZH4QuBDAK6PT/wbBpiBHvu/qHNg3MQRWJbJNa2SOyw73cXNH25FWkDa4uNiZUT+X4VYqBYAX/AU4niZq8tiKi+vfJ0CgQpExCR2IKWZHL7RNoiVZ7gaccumGFt6Xh8KduZ71V4dkrVTjKJ1PdB4EXktpVqTaTMc5D60QsCEopLkHswfXTFfpW4GLZeCppM/ewTkrjZ/B5uHFhWyMXC5kwyu641KSAiICJRDG9e3hkj0bDs2CvWC1klbe8TN1SAR6IyvAyEMctNLtpacohbIIpEYLjvQKSQQznrpbzotyWyQJBElPAKMl5bihJcAtUkBMJ90p5EVgYBmATj+uF7ouE+Ge4K+Awu/PJ+a1AnaaEK9H/MQb8xBevGoeK46dQqCKJzC/jhPutzohJk2pYzwtWCyvBSiY3X7cCBTq5zev95MCJXoFZ4qQQjqBLeK53hXbEqn3V2/iiSQFh4uASZgDiRXHMmsQ/M0plQgajhARI66zUrd7X1cpzhpRLYYump49/UZI89G7RWjjucldsFVFvufJ6MslqONZxg4q9rjx/Rl8yoW+R4wkl3HHukXV8ygBO5nnAiMCSC4VZtfhYEkcTCySQi9Z9rHWvV3gmHM2TucO+F0+vzKE+fAwWufXhoXviUT4cvJR1dVOu94krw65kOzfs06q61gPUZ0VXbZhaEP7+CkGzHGmEhe6d2+9yocAayw2p3RklIyTFv1L2VDQXHtSZFbite/gNfyoEzF8GkGAAAAABJRU5ErkJggg== 2x"
 						media="(min-width: 1200px)"
 					/>
 					<img
-						src="/STP-10203/assets/Photo-mobile-B5Xfov5T.jpg"
+						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGjSURBVHgBlZM9S0JRGMefczw3ehkKysxquA19hJqjGiuolmqp1qYcW8qGKFq8Ds0ZEdFSBi1Bog1BkKDQB/AulYKgZnotj+fpesEwvV71Pxw4L7/feScTl0sbSImHIKZRgDe8dq1AGyGT51sxISXkvwZAFQG3wys3ty0Jpo5VzA0fArLk/w5Anw3F/vOqX7UUTB98oZCSYCYxgmSfF7gS3fSnzQTUKIoD0PO+A4QPmEyBe1IXjUxeLa83FDSTIBDZQfO+2H1vTAt2yqYCK4nTloeT3icYteVkVuKxn4B0WhHRuiXVSCqwk+ardoUbNlEK8gdpvU5QLRkR3XVwlUTWr1sxFZTj+ORwdJcAR5Y3GqKfDaZNBXYtDrsRF/QnUpC9GAeR6TDDdZi6aSPYXogb9TJcJyGgsGxpjM0Wz6gVXElFghoL6cc+Jc1wF1kE42GxZrCxWAT1O8NcHfMFf20fs4b1H4qg5AX3joWipk+ZNYL1z+TnJe5yhqIqWIS8zi2kHNpHX9WsISKI2x58eYQWwga1t01E6iEE+wQQ91Ag7IU28gsmod7arxWVLAAAAABJRU5ErkJggg=="
 						alt="Paradise Paws Logo"
-						class="hero-img"
+						class="hero-play-img"
 					/>
 				</picture>
-			</div>
-      <a class="hero-button" href="#"
-        ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAmCAMAAACWCLnmAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAFRQTFRFR3BM/LwD6UQ050M02oAp6kI16kM0MadQNKhT+roD+7wD50A4M6hTMqdS/LwD+7sD+7wENKlT6kM1NKlT6kM1NKhT+7wEQoX0lmSVO5ek8n8dmLIrLj0EHwAAABp0Uk5TAN99SBDqwiThLe8gn2CVar+EoK///////v7xHO2tAAAA2ElEQVR42n3S2w6CMBCE4REpFPAAKl2V939PI+lmwyzlv/6SHQ5AO8U5XnFQG+d/sUWxy5y7FNFn1uJUIGKmNElWoz3bPaKmPEnY+GvCxr8AYeOvCZncVBPxZjndibBZUkqnzogZE2u3LhMzJnL9PRMzJPI1IaNC6zsIGxXaCCHDIvVM3t/EgcTrxWYEC2c6kFDDD22CTH+rAXhhZgUACzOjfkYWauhn8CJUNYiQeAyAtSOaMzY5EQgAJmwEtRXNAJ8JG0GZCBX2q1TYCK4OPMI3PJrQnA/AD+G+Q/tJTaY4AAAAAElFTkSuQmCC" alt="" width="22" />Play
-        Now</a
+				Play Now</a
       >
     </div>
   </div>
@@ -161,19 +176,23 @@
         <li>Genre: Merge Puzzle Adventure</li>
         <li>Updated: July 2025</li>
       </ul>
-      <div class="about-picture">
-        <picture>
-          <source
-            srcset="./img/about/Photo.jpg 1x, ./img/about/Photo@2x.jpg 2x"
-            media="(min-width: 1200px)"
-          />
-          <img
-            src="./img/about/Photo-mobile.jpg"
-            alt="About Paws Logo"
-            class="about-img"
-          />
-        </picture>
-      </div>
+      <!--<div class="about-picture">-->
+      <picture>
+        <source
+          srcset="../img/about/about.png 1x, ../img/about/about@2x.png 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="../img/about/about-mobile.png 1x, ../img/about/about-mobile@2x.png 2x"
+          media="(max-width: 1999px)"
+        />
+        <img
+          src="../img/about/about-mobile.png"
+          alt="Paradise Paws Logo"
+          class="about-picture hero-img"
+        />
+      </picture>
+      <!--</div>-->
     </div>
   </div>
 </section>
@@ -187,43 +206,49 @@
       </h3>
       <ul class="steps-list">
         <li class="steps-items">
-          <picture>
-            <source
-              srcset="/STP-10203/assets/step1-DPoEIuyn.jpg 1x, /STP-10203/assets/step1@2x-DgU4lEaD.jpg 2x"
-              type="image/webp" />
-            <img
-              src="/STP-10203/assets/step1-DPoEIuyn.jpg"
-              alt="how to play - step one"
-              loading="lazy"
-              decoding="async"
-              class="steps-img"
-          /></picture>
+          <div class="step-item">
+            <picture>
+              <source
+                srcset="/STP-10203/assets/step1-DsCELEX4.jpg 1x, /STP-10203/assets/step1@2x-1XgfIizb.jpg 2x"
+                type="image/webp" />
+              <img
+                src="/STP-10203/assets/step1-DsCELEX4.jpg"
+                alt="how to play - step one"
+                loading="lazy"
+                decoding="async"
+                class="steps-img"
+            /></picture>
+          </div>
         </li>
         <li class="steps-items">
-          <picture>
-            <source
-              srcset="/STP-10203/assets/step2-DvcSE1LG.webp 1x, /STP-10203/assets/step2@2x-D53hb3Hd.webp 2x"
-              type="image/webp" />
-            <img
-              src="/STP-10203/assets/step2-DvcSE1LG.webp"
-              alt="how to play - step one"
-              loading="lazy"
-              decoding="async"
-              class="steps-img"
-          /></picture>
+          <div class="step-item">
+            <picture>
+              <source
+                srcset="/STP-10203/assets/step2-DvcSE1LG.webp 1x, /STP-10203/assets/step2@2x-D53hb3Hd.webp 2x"
+                type="image/webp" />
+              <img
+                src="/STP-10203/assets/step2-DvcSE1LG.webp"
+                alt="how to play - step one"
+                loading="lazy"
+                decoding="async"
+                class="steps-img"
+            /></picture>
+          </div>
         </li>
         <li class="steps-items">
-          <picture>
-            <source
-              srcset="/STP-10203/assets/step3-BARKVLoX.jpg 1x, /STP-10203/assets/step3@2x-bJW18r33.jpg 2x"
-              type="image/webp" />
-            <img
-              src="/STP-10203/assets/step3-BARKVLoX.jpg"
-              alt="how to play - step one"
-              loading="lazy"
-              decoding="async"
-              class="steps-img"
-          /></picture>
+          <div class="step-item">
+            <picture>
+              <source
+                srcset="/STP-10203/assets/step3-D19c1h8Q.jpg 1x, /STP-10203/assets/step3@2x-fbehqb_b.jpg 2x"
+                type="image/webp" />
+              <img
+                src="/STP-10203/assets/step3-D19c1h8Q.jpg"
+                alt="how to play - step one"
+                loading="lazy"
+                decoding="async"
+                class="steps-img"
+            /></picture>
+          </div>
         </li>
       </ul>
       <p class="steps-text">
