@@ -1,8 +1,5 @@
 .features .container {
-	font-family: "Montserrat", sans-serif;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	max-width: 322px;
 }
 
 .features-container {
@@ -12,7 +9,7 @@
 	align-items: center;
 	justify-content: start;
 	border-radius: 10px;
-	width: 288px;
+
 	background: #ffc482;
 	padding: 26px 0 26px 0;
 }
@@ -28,7 +25,7 @@
 .features-description {
 	font-weight: 500;
 	font-size: 20px;
-	line-height: 145%;
+	line-height: 125%;
 	text-align: center;
 	width: 260px;
 	margin-bottom: 24px;
@@ -40,8 +37,8 @@
 	padding: 0;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	/* 3 колонки */
-	gap: 24px;
+	gap: 4px;
+	row-gap: 40px;
 	text-align: center;
 }
 
@@ -58,8 +55,9 @@
 }
 
 .feature-title {
-	font-size: 1rem;
-	margin: 0 0 8px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 125%;
 }
 
 .feature-arrow {
@@ -68,32 +66,76 @@
 }
 
 .feature-desc {
-	font-size: 0.9rem;
-	margin: 0;
-	max-width: 180px;
-	/* щоб текст не розлазився занадто */
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 125%;
+	text-align: center;
+	max-width: 90px;
 }
 
 
 @media (min-width: 1200px) {
+	.features .container {
+		max-width: 1200px;
+	}
+
 	.features-container {
 		width: 100%;
+		padding: 40px 74px 26px 74px;
+	}
+
+	.features-title {
+		font-size: 32px;
+		line-height: 131%;
+		margin-bottom: 24px;
+	}
+
+	.features-description {
+		font-size: 24px;
+		margin-bottom: 24px;
+		width: 440px;
 	}
 
 	.features-list {
-		grid-template-columns: 100px 258px 165px 1fr;
-		/* лінійка як обговорювали */
-		gap: 16px;
-		text-align: left;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
 	}
 
 	.feature-item {
-		flex-direction: row;
+		display: grid;
+		grid-template-columns: 100px 260px 168px 352px;
 		align-items: center;
+		gap: 22px;
+	}
+
+	.feature-icon {
+		width: 100px;
+		height: auto;
+		max-width: none;
+		margin-right: 8px;
+	}
+
+	.feature-title {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 121%;
+		text-align: left;
 	}
 
 	.feature-arrow {
-		transform: rotate(0);
+		transform: rotate(-90deg);
 		margin: 0;
+	}
+
+	.feature-desc {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 121%;
+		text-align: center;
+		max-width: none;
 	}
 }
