@@ -21,7 +21,7 @@
 	font-weight: 600;
 	font-size: 24px;
 	line-height: 125%;
-	margin-bottom: 17px;
+	margin-bottom: 18px;
 }
 
 .about-description {
@@ -29,7 +29,7 @@
 	font-size: 20px;
 	line-height: 145%;
 	text-align: center;
-	margin-bottom: 390px;
+	margin-bottom: 370px;
 }
 
 .about-text {
@@ -49,11 +49,17 @@
 	gap: 24px;
 }
 
-.about-picture {}
-
-.about-img {}
-
-
+.about-picture {
+	position: absolute;
+	top: 160px;
+	right: 46px;
+	border-radius: 15px;
+	width: 190px;
+	height: 300px;
+	overflow: hidden;
+	/*box-shadow: 0 5px 4px 5px rgba(0, 0, 0, 0.15);*/
+	transform: rotate(19deg);
+}
 
 
 @media only screen and (min-width: 1200px) {
@@ -85,14 +91,19 @@
 	.about-text {
 		font-size: 24px;
 		line-height: 121%;
-		padding-right: 531px;
+		padding-right: 520px;
 	}
 
 	.about-list {
 		align-self: flex-start;
 	}
 
-	.about-picture {}
+	.about-picture {
+		top: 66px;
+		right: 100px;
+		/*border-radius: 15px;*/
+		width: 310px;
+		height: 560px;
+	}
 
-	.about-img {}
 }

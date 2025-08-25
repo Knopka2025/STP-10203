@@ -15,25 +15,46 @@
 				Merge to discover unique species</br>Create thriving jungle habitats</br>Unlock
         daily surprises & rewards
       </p>
-			<div class="hero-picture">
+			<!--<div class="hero-picture">-->
 				<picture>
 					<source
 						srcset="
-							./img/hero/Photo.jpg    1x,
-							./img/hero/Photo@2x.jpg 2x
+							../img/hero/Photo.png    1x,
+							../img/hero/Photo@2x.png    2x
+						"
+						media="(min-width: 1200px)"
+					/>
+					<source
+						srcset="
+							../img/hero/Photo-mobile.png    1x,
+							../img/hero/Photo-mobile@2x.png    2x
+						"
+						media="(max-width: 1999px)"
+					/>
+					<img
+						src="../img/hero/Photo-mobile.png"
+						alt="Paradise Paws Logo"
+						class="hero-picture hero-img"
+					/>
+				</picture>
+			<!--</div>-->
+      <a class="hero-button" href="#"
+        >
+				<picture>
+					<source
+						srcset="
+						./img/hero/logos_google-play-icon.png    1x,
+						./img/hero/logos_google-play-icon@2x.png	2x
 						"
 						media="(min-width: 1200px)"
 					/>
 					<img
-						src="./img/hero/Photo-mobile.jpg"
+						src="./img/hero/logos_google-play-icon.png"
 						alt="Paradise Paws Logo"
-						class="hero-img"
+						class="hero-play-img"
 					/>
 				</picture>
-			</div>
-      <a class="hero-button" href="#"
-        ><img src="/img/logos_google-play-icon.png" alt="" width="22" />Play
-        Now</a
+				Play Now</a
       >
     </div>
   </div>
