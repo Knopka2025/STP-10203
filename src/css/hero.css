@@ -68,24 +68,17 @@
 .hero-picture {
 	position: absolute;
 	top: 120px;
+	left: 46px;
 	border-radius: 15px;
 	width: 189px;
 	height: 300px;
-	overflow: hidden;
-	box-shadow: 0 5px 4px 5px rgba(0, 0, 0, 0.15);
+	/*overflow: hidden;*/
+	/*box-shadow: 0 5px 4px 5px rgba(0, 0, 0, 0.15);*/
 	transform: rotate(-19deg);
-	/* приклад, підганяй під дизайн */
-	/*background-color: #ffc482;
-	background-image: url("../img/hero/Photo-mobile.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;*/
 }
 
-.hero-img {
-	display: block;
-	height: 101%;
-	/*object-fit: cover;*/
+.hero-play-img {
+	width: 22px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -142,7 +135,9 @@
 		top: 50px;
 		left: 100px;
 		border-radius: 15px;
-		width: 309px;
-		height: 559px;
+		width: 310px;
+		height: 560px;
 	}
+
+
 }
