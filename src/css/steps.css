@@ -2,10 +2,6 @@
 	font-family: "Montserrat", sans-serif;
 }
 
-.container {}
-
-.steps-container {}
-
 .steps-title {
 	font-weight: 600;
 	font-size: 24px;
@@ -38,16 +34,11 @@
 	overflow: hidden;
 }
 
-.steps-img {}
-
 .steps-text {
 	display: none;
 }
 
 @media only screen and (min-width: 1200px) {
-	.hero .container {}
-
-
 	.steps-list {
 		display: flex;
 		flex-direction: row;
