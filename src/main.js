@@ -4,3 +4,4 @@ import './js/atmosphere';
 
 import './js/modal menu';
 import './js/cookies';
+import './js/scrollToTop';
