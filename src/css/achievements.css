@@ -2,11 +2,9 @@
 .levels-section {
     padding-bottom: 24px;
     display: flex;
-align-items: center;
-justify-content: flex-start;
-flex-direction: column;
-    
-
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 .section-title,
@@ -19,25 +17,26 @@ flex-direction: column;
 
 .section-title {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.25;
 }
 
 .section-subtitle {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.45;
 }
 
 
 .levels-item {
     display: flex;
-    gap: 14px;
+    gap: 24px;
     align-items: center;
     justify-content: flex-start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
     padding-bottom: 24px;
-    
-    
 }
 
 .icon {
@@ -47,19 +46,19 @@ flex-direction: column;
 
 .levels-footer {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 1.45;
+    font-size: 20px;
+    line-height: 145%;
 }
 
 /* Десктопна версія (1200px+) */
 @media screen and (min-width: 1200px) {
     .levels-item {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1.66667;
-    color: #000;
-    
-  }
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.66667;
+        color: #000;
+
+    }
 
     .section-title {
         font-size: 32px;

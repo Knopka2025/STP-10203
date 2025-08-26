@@ -39,6 +39,16 @@
 }
 
 @media only screen and (min-width: 1200px) {
+	.steps-title {
+		font-size: 32px;
+		line-height: 131%;
+	}
+
+	.steps-description {
+		font-size: 24px;
+		line-height: 125%;
+	}
+
 	.steps-list {
 		display: flex;
 		flex-direction: row;
