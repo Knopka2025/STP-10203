@@ -42,7 +42,7 @@ html {
   }
 }
 
-body.locked {
+body.js-locked {
   overflow: hidden;
 }
 

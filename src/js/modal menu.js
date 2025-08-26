@@ -1,5 +1,5 @@
-const btn_burger = document.querySelector(".nav-burger");
-const mobile_menu = document.querySelector(".modal-menu");
+const btn_burger = document.querySelector(".js-nav-burger");
+const mobile_menu = document.querySelector(".js-modal-menu");
 const body = document.body;
 
 btn_burger.addEventListener('click', (e) => {
@@ -15,8 +15,8 @@ mobile_menu.addEventListener('click', (e) => {
 });
 
 function openCloseModalMenu() {
-	btn_burger.classList.toggle("active");
-	mobile_menu.classList.toggle("is-open");
-	body.classList.toggle("locked");
+	btn_burger.classList.toggle("js-active");
+	mobile_menu.classList.toggle("js-is-open");
+	body.classList.toggle("js-locked");
 	btn_burger.disabled = false;
 }
