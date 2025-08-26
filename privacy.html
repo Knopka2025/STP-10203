@@ -18,10 +18,10 @@
     />
     <meta name="author" content="Education Kixi" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" crossorigin href="/STP-10203/assets/styles-BkoQrgdG.css">
+    <link rel="stylesheet" crossorigin href="/STP-10203/assets/styles-DP9jmhqk.css">
   </head>
   <body>
-    <header class="header">
+    <!--<header class="header">
   <div class="container">
     <nav class="nav">
       <ul class="nav-list">
@@ -29,11 +29,14 @@
           <a href="./index.html" class="nav-logo" aria-label="Go to home">
             <picture>
               <source
-                srcset="/STP-10203/assets/logo-pc-Dcp4JjXL.png 1x, /STP-10203/assets/logo-pc@2x-7rKd6JzQ.png 2x"
+                srcset="
+                  ./img/header/logo-pc.png    1x,
+                  ./img/header/logo-pc@2x.png 2x
+                "
                 type="image/png"
               />
               <img
-                src="/STP-10203/assets/logo-pc-Dcp4JjXL.png"
+                src="./img/header/logo-pc.png"
                 alt="Paradise Paws Logo"
                 class="nav-logo-icon"
               />
@@ -69,11 +72,14 @@
         <a href="./index.html" class="nav-logo" aria-label="Go to hero">
           <picture>
             <source
-              srcset="data:image/png;base64,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 1x, /STP-10203/assets/logo-mobile@2x-38CjEJZd.png 2x"
+              srcset="
+                ./img/header/logo-mobile.png    1x,
+                ./img/header/logo-mobile@2x.png 2x
+              "
               type="image/png"
             />
             <img
-              src="data:image/png;base64,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"
+              src="./img/header/logo-mobile.png"
               alt="Paradise Paws Logo"
               class="nav-logo-icon"
             />
@@ -89,123 +95,116 @@
     </nav>
   </div>
 </header>
-
-    <section class="privacy-section container">
-      <a href="/" class="back-link">← Go to Home</a>
-      <h1 class="privacy-title">Privacy Policy</h1>
-      <p class="privacy-updated">Last Updated: 2025-08-01</p>
-
-      <p>
-        This Privacy Policy applies to the educationkixi.online website
-        (hereinafter referred to as "Website"). By accessing or using our
-        services, you agree to the collection and use of information as
-        described in this policy.
-      </p>
-
-      <h2>1. Information We Collect</h2>
-      <ul>
-        <li>
-          <strong>Personal Information:</strong> Name, email address, and other
-          details if voluntarily provided.
-        </li>
-        <li>
-          <strong>Technical Data:</strong> IP address, browser type, and device
-          information for analytics purposes.
-        </li>
-        <li>
-          <strong>Cookies & Tracking:</strong> We use cookies to enhance user
-          experience and track usage trends.
-        </li>
-      </ul>
-
-      <h2>2. How We Use Your Information</h2>
-      <ul>
-        <li>Providing and improving our services.</li>
-        <li>Enhancing website security and preventing fraud.</li>
-        <li>Analyzing trends and user behavior through analytics tools.</li>
-      </ul>
-
-      <h2>3. Cookies and Tracking Technologies</h2>
-      <p>
-        We use cookies and similar technologies to personalize content, track
-        website performance, and improve user experience. Users can manage or
-        disable cookies through browser settings.
-      </p>
-
-      <h2>4. Third-Party Services</h2>
-      <p>
-        We may use third-party services such as Google Analytics to monitor
-        traffic and improve services. These services have their own privacy
-        policies:
-      </p>
-      <ul>
-        <li>Google Play Services</li>
-        <li>Google Analytics for Firebase</li>
-        <li>Facebook</li>
-      </ul>
-
-      <h2>5. Data Security</h2>
-      <p>
-        We implement security measures to protect collected information from
-        unauthorized access or misuse. However, no method of transmission over
-        the internet is 100% secure.
-      </p>
-
-      <h2>6. Children’s Privacy</h2>
-      <p>
-        Our Website is not intended for children under 13, and we do not
-        knowingly collect personal data from them. If we become aware that a
-        child has provided information, we will take steps to delete it.
-      </p>
-
-      <h2>7. Changes to This Policy</h2>
-      <p>
-        We may update this Privacy Policy periodically. Users will be notified
-        of significant changes through the Website. Continued use of the Website
-        after modifications implies acceptance of the updated policy.
-      </p>
-
-      <h2>
-        8. Your Rights under the General Data Protection Regulation (GDPR)
-      </h2>
-      <ul>
-        <li>
-          <strong>Right of Access:</strong> Request access to the personal data
-          we hold about you.
-        </li>
-        <li>
-          <strong>Right to Rectification:</strong> Request correction of
-          inaccurate or incomplete personal data.
-        </li>
-        <li>
-          <strong>Right to Erasure:</strong> Request deletion of your personal
-          data where legally applicable.
-        </li>
-        <li>
-          <strong>Right to Restrict Processing:</strong> Request limited use of
-          your data under certain conditions.
-        </li>
-        <li>
-          <strong>Right to Data Portability:</strong> Receive your data in a
-          structured, machine-readable format.
-        </li>
-        <li>
-          <strong>Right to Object:</strong> Object to processing based on
-          legitimate interests or direct marketing.
-        </li>
-        <li>
-          <strong>Right to Lodge a Complaint:</strong> File a complaint with
-          your local data protection authority.
-        </li>
-      </ul>
-
-      <h2>9. Contact Us</h2>
-      <p>
-        If you have any questions or concerns about this Privacy Policy, please
-        contact us at
-        <a href="mailto:info@educationkixi.online">info@educationkixi.online</a
-        >.
-      </p>
+-->
+    <section class="privacy-section">
+      <div class="container">
+        <a href="/" class="back-link">← Go to Home</a>
+        <h1 class="privacy-title">Privacy Policy</h1>
+        <p class="privacy-updated">Last Updated: 2025-08-01</p>
+        <p>
+          This Privacy Policy applies to the educationkixi.online website
+          (hereinafter referred to as "Website"). By accessing or using our
+          services, you agree to the collection and use of information as
+          described in this policy.
+        </p>
+        <h2>1. Information We Collect</h2>
+        <ul>
+          <li>
+            <strong>Personal Information:</strong> Name, email address, and
+            other details if voluntarily provided.
+          </li>
+          <li>
+            <strong>Technical Data:</strong> IP address, browser type, and
+            device information for analytics purposes.
+          </li>
+          <li>
+            <strong>Cookies & Tracking:</strong> We use cookies to enhance user
+            experience and track usage trends.
+          </li>
+        </ul>
+        <h2>2. How We Use Your Information</h2>
+        <ul>
+          <li>Providing and improving our services.</li>
+          <li>Enhancing website security and preventing fraud.</li>
+          <li>Analyzing trends and user behavior through analytics tools.</li>
+        </ul>
+        <h2>3. Cookies and Tracking Technologies</h2>
+        <p>
+          We use cookies and similar technologies to personalize content, track
+          website performance, and improve user experience. Users can manage or
+          disable cookies through browser settings.
+        </p>
+        <h2>4. Third-Party Services</h2>
+        <p>
+          We may use third-party services such as Google Analytics to monitor
+          traffic and improve services. These services have their own privacy
+          policies:
+        </p>
+        <ul>
+          <li>Google Play Services</li>
+          <li>Google Analytics for Firebase</li>
+          <li>Facebook</li>
+        </ul>
+        <h2>5. Data Security</h2>
+        <p>
+          We implement security measures to protect collected information from
+          unauthorized access or misuse. However, no method of transmission over
+          the internet is 100% secure.
+        </p>
+        <h2>6. Children’s Privacy</h2>
+        <p>
+          Our Website is not intended for children under 13, and we do not
+          knowingly collect personal data from them. If we become aware that a
+          child has provided information, we will take steps to delete it.
+        </p>
+        <h2>7. Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy periodically. Users will be notified
+          of significant changes through the Website. Continued use of the
+          Website after modifications implies acceptance of the updated policy.
+        </p>
+        <h2>
+          8. Your Rights under the General Data Protection Regulation (GDPR)
+        </h2>
+        <ul>
+          <li>
+            <strong>Right of Access:</strong> Request access to the personal
+            data we hold about you.
+          </li>
+          <li>
+            <strong>Right to Rectification:</strong> Request correction of
+            inaccurate or incomplete personal data.
+          </li>
+          <li>
+            <strong>Right to Erasure:</strong> Request deletion of your personal
+            data where legally applicable.
+          </li>
+          <li>
+            <strong>Right to Restrict Processing:</strong> Request limited use
+            of your data under certain conditions.
+          </li>
+          <li>
+            <strong>Right to Data Portability:</strong> Receive your data in a
+            structured, machine-readable format.
+          </li>
+          <li>
+            <strong>Right to Object:</strong> Object to processing based on
+            legitimate interests or direct marketing.
+          </li>
+          <li>
+            <strong>Right to Lodge a Complaint:</strong> File a complaint with
+            your local data protection authority.
+          </li>
+        </ul>
+        <h2>9. Contact Us</h2>
+        <p>
+          If you have any questions or concerns about this Privacy Policy,
+          please contact us at
+          <a href="mailto:info@educationkixi.online"
+            >info@educationkixi.online</a
+          >.
+        </p>
+      </div>
     </section>
 
     <section class="footer-small container ">
