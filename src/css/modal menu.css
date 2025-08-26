@@ -43,10 +43,11 @@
 .list-wrapper {
   position: relative;
   width: 251px;
-  height: 383px;
-  padding: 56px 64px;
+  height: 480px;
+  padding: 72px 64px;
   background-image: url("../img/header/menu.png");
   background-repeat: no-repeat;
+  background-size: 251px 480px;
   z-index: 110;
 }
 
@@ -61,7 +62,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 24px;
   flex-direction: column;
   text-decoration: none;
 }
