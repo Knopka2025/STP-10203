@@ -65,6 +65,17 @@
 	font-size: 32px;
 }
 
+.hero-button:hover,
+.hero-button:focus {
+	background: #e6e6e6;
+	transform: translateY(-2px);
+}
+
+.hero-button:active {
+	transform: translateY(0);
+
+}
+
 .hero-picture {
 	position: absolute;
 	top: 120px;
