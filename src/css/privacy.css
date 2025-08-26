@@ -1,44 +1,115 @@
-.privacy-section {
+.policy {
+	padding: 40px 0 0 0;
+}
+
+.policy-container {
+	font-weight: 600;
 	font-size: 20px;
-	padding: 40px 16px;
-}
-
-.back-link {
-	display: block;
-	font-weight: 400;
-	font-size: 24px;
 	line-height: 121%;
-	margin-bottom: 32px;
+
 }
 
-.privacy-title {
+.policy-btn {
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 129%;
+	gap: 10px;
+	padding: 12px 0;
+	margin-bottom: 12px;
+}
+
+.policy-btn img {
+	width: 20px;
+}
+
+.policy-title {
 	font-weight: 700;
 	font-size: 32px;
 	line-height: 91%;
-	margin-bottom: 24px;
+	padding-bottom: 24px;
 }
 
-.privacy-updated {
+.policy-date {
 	font-weight: 400;
 	font-size: 20px;
+	line-height: 145%;
+	padding-bottom: 12px;
+}
+
+.policy-text {
+	font-weight: 400;
+	text-indent: 6px;
+	line-height: 130%;
+}
+
+.policy-list-wrapper {
+	padding-top: 20px;
+}
+
+
+.policy-item {
+	font-weight: 600;
+}
+
+.policy-item:not(:last-child) {
 	margin-bottom: 20px;
 }
 
-.privacy-section p {
-	font-weight: 400;
-	font-size: 20px;
-	margin-bottom: 20px;
+.policy-item .policy-text.title,
+.policy-item .policy-list.title {
+	padding-top: 14px;
 }
 
+.policy-list {
+	list-style: disc;
+	list-style-position: outside;
+	padding-left: 1.3rem;
+	font-weight: 400;
+	line-height: 130%;
+}
 
-@media only screen and (min-width: 1200px) {
-	.privacy-section .container {
-		padding: 40px 36px;
+.footer-small.container {
+	margin-bottom: 16px;
+}
+
+@media (min-width: 1200px) {
+
+	.policy-container {
+		font-size: 24px;
+	}
+
+	.policy-btn {
+		font-size: 24px;
+		margin-bottom: 16px;
+	}
+
+	.policy-btn img {
+		width: 24px;
 	}
 
 
-	.back-link {
-		margin-bottom: 40px;
+	.policy-title {
+		font-size: 32px;
+	}
+
+	.policy-list-wrapper {
+		padding-top: 32px;
+	}
+
+	.policy-item:not(:last-child) {
+		margin-bottom: 32px;
+	}
+
+	/*.policy-item .policy-text {
+		padding-top: 8px;
+	}*/
+
+	.policy-list {
+
+		padding-left: 1.6rem;
+
 	}
 
 }
