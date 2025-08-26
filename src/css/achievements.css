@@ -1,6 +1,10 @@
 /* Базові стилі (мобільна версія 320px) */
 .levels-section {
     padding-bottom: 24px;
+    display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: column;
     
 
 }
@@ -26,15 +30,14 @@
 }
 
 
-
 .levels-item {
     display: flex;
     gap: 14px;
     align-items: center;
     justify-content: flex-start;
-    padding-bottom: 15px;
+    padding-bottom: 24px;
     
-    width: 280px;
+    
 }
 
 .icon {

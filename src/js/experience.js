@@ -24,8 +24,8 @@ window.addEventListener("scroll", () => {
         Math.abs(rect.top + rect.height / 2 - windowHeight / 2) /
           (windowHeight / 2);
 
-      // обмежуємо рух шириною лінії (150px мінус ширина картинки)
-      const containerWidth = 100;
+      // обмежуємо рух шириною лінії (90px мінус ширина картинки)
+      const containerWidth = 90;
       const iconWidth = icon.offsetWidth;
       const maxShift = containerWidth - iconWidth;
 
