@@ -1,101 +1,116 @@
-.frame{
-    display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding-top: 24px;
+.frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 24px;
 }
 
-.mob-title-wrap{
-    display: flex;
-align-items: center;
-justify-content: flex-start;
-flex-direction: column;
-gap: 24px;
-margin-bottom: 24px;
+.mob-title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 24px;
 }
 
 .mob-tittle-wrapper {
-font-weight: 600;
-font-size: 24px;
-line-height: 1.25;
-text-align: center;
-color: #000;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+  color: #000;
 }
 
 .mob-subtitle-wrapper {
-font-weight: 500;
-font-size: 20px;
-line-height: 1.45;
-text-align: center;
-color: #000;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.45;
+  text-align: center;
+  color: #000;
 }
 
 .wrap-list {
-list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    padding-bottom: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 24px;
 }
 
 .wrap-item {
-    display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 150px;
-        /* або auto, якщо потрібно адаптивно */
-        text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  /* або auto, якщо потрібно адаптивно */
+  text-align: center;
 }
 
 
 .img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 .wrap-item-text {
-font-weight: 600;
-font-size: 24px;
-line-height: 1.20833;
-color: #000;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.20833;
+  color: #000;
 }
 
 .line {
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
 
-    border: 1px solid #000;
-    border-radius: 24px;
-    padding: 20px 32px;
-    width: 150px;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
+  border: 1px solid #000;
+  border-radius: 24px;
+  padding: 20px 32px;
+  width: 150px;
 }
 
 .wrap-line-one {
-background: #c5ffc1;
+  background: #c5ffc1;
 }
+
 .wrap-line-two {
-background: #b9d4ff;
+  background: #b9d4ff;
 }
-.wrap-line-three{
-background: #ffcece;
+
+.wrap-line-three {
+  background: #ffcece;
 }
-.wrap-line-four{
-background: #8cd3ff;
+
+.wrap-line-four {
+  background: #8cd3ff;
 }
-.wrap-line-five{
-background: #8dff89;
+
+.wrap-line-five {
+  background: #8dff89;
 }
 
 @media screen and (min-width: 1200px) {
+
+  .mob-tittle-wrapper {
+    font-size: 32px;
+    line-height: 131%;
+  }
+
+  .mob-subtitle-wrapper {
+    font-size: 24px;
+    line-height: 125%
+  }
+
   .wrap-list {
     align-items: flex-start;
     padding-left: 0;
@@ -110,11 +125,13 @@ background: #8dff89;
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    gap: 58px; /* 🔥 Відстань між карткою та текстом */
+    gap: 58px;
+    /* 🔥 Відстань між карткою та текстом */
   }
 
   .line {
-    width: 448px; /* ✅ Нова ширина картки */
+    width: 448px;
+    /* ✅ Нова ширина картки */
     height: 100px;
     border-radius: 16px;
     flex-shrink: 0;
@@ -125,7 +142,7 @@ background: #8dff89;
   }
 
   .wrap-item-text {
-   font-weight: 600;
+    font-weight: 600;
     font-size: 32px;
     line-height: 1.3125;
     color: #000;

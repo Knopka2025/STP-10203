@@ -70,10 +70,6 @@
 	line-height: 130%;
 }
 
-.footer-small.container {
-	margin-bottom: 16px;
-}
-
 @media (min-width: 1200px) {
 
 	.policy-container {

@@ -72,14 +72,14 @@ footer .container {
 }
 
 .f-button:hover {
-  
+
   background: #e6e6e6;
   transform: translateY(-2px);
 }
 
 .f-button:active {
   transform: translateY(0);
-  
+
 }
 
 .f-moto {
@@ -92,7 +92,7 @@ footer .container {
 
 .f-wrap-rights {
   text-align: center;
- 
+  margin-bottom: 20px;
 }
 
 .f-rights {
@@ -137,13 +137,16 @@ footer .container {
   }
 
   .f-moto {
-    font-size: 18px;
-    margin: 48px auto 24px;
-    max-width: 600px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 145%;
+    margin: 34px auto 40px;
+    max-width: 740px;
   }
 
   .f-wrap-rights {
     margin-top: 32px;
+    margin-bottom: 40px;
   }
 
   .f-rights {
