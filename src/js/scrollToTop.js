@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-	const backoTop = document.querySelector('#back-to-top');
+	const backoTop = document.querySelector('.js-back-to-top');
 
 	window.addEventListener("scroll", () => {
 
 		if (window.scrollY > 600) {
-			backoTop.classList.remove("hidden");
+			backoTop.classList.remove("js-hidden");
 		} else {
-			backoTop.classList.add("hidden");
+			backoTop.classList.add("js-hidden");
 		}
 	});
 

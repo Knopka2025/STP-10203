@@ -1,4 +1,4 @@
-.modal-menu {
+.js-modal-menu {
   font-weight: 400;
   font-size: 18px;
   position: fixed;
@@ -16,7 +16,7 @@
   transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibily 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.modal-menu.is-open {
+.js-modal-menu.js-is-open {
   padding-top: 70px;
   opacity: 1;
   visibility: visible;
@@ -51,7 +51,7 @@
   z-index: 110;
 }
 
-.modal-menu.is-open .nav-modal {
+.js-modal-menu.js-is-open .nav-modal {
   opacity: 1;
   visibility: visible;
   animation: fadeInDown 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -74,12 +74,12 @@
   line-height: normal;
 }
 
-.modal-menu-icon {
+.js-modal-menu-icon {
   stroke: black;
   fill: var(--main-yellow);
 }
 
-.back-to-top {
+.js-back-to-top {
   position: fixed;
   bottom: 40px;
   right: 24px;
@@ -98,13 +98,13 @@
   z-index: 80;
 }
 
-.back-to-top.hidden {
+.js-back-to-top.js-hidden {
   opacity: 0;
   visibility: hidden;
   transform: scale(0);
 }
 
-.back-to-top:hover {
+.js-back-to-top:hover {
   /*border-color: var(--color-main-black);
   background-color: var(--color-main-black);*/
   transform: translateY(-2px);
@@ -112,7 +112,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .modal-menu {
+  .js-modal-menu {
     display: none;
     z-index: 0;
     pointer-events: none;
@@ -120,7 +120,7 @@
 }
 
 @media only screen and (min-width: 1260px) {
-  .back-to-top {
+  .js-back-to-top {
     left: calc(50% + (min(1168px, 100vw) / 2));
   }
 }
