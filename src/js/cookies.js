@@ -5,19 +5,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	const cookiesAccepted = JSON.parse(localStorage.getItem("cookiesAccepted"));
 
-	if (!cookiesAccepted) {
-		cookieBanner.classList.remove("d-none");
+	if (cookiesAccepted) {
+		cookieBanner.classList.remove("is-open")
 	} else {
-		cookieBanner.classList.add("d-none");
+		setTimeout(() => {
+			cookieBanner.classList.add("is-open");
+		}, 2000);
 	}
 
 	acceptBtn.addEventListener("click", () => {
 		localStorage.setItem("cookiesAccepted", true);
-		cookieBanner.classList.add("d-none");
+		cookieBanner.classList.remove("is-open");
 	});
 
 	declineBtn.addEventListener("click", () => {
 		localStorage.setItem("cookiesAccepted", false);
-		cookieBanner.classList.add("d-none");
+		cookieBanner.classList.remove("is-open");
 	});
 });

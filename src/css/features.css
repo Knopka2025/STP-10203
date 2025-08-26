@@ -49,19 +49,17 @@
 }
 
 .feature-icon {
-	width: 40px;
-	height: 40px;
+	width: 64px;
+	height: 64px;
 	margin-bottom: 8px;
 }
 
 .feature-title {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 125%;
+	display: none;
 }
 
 .feature-arrow {
-	font-size: 1.2rem;
+	/*font-size: 1.2rem;*/
 	margin-bottom: 8px;
 }
 
@@ -120,6 +118,7 @@
 	}
 
 	.feature-title {
+		display: block;
 		font-weight: 400;
 		font-size: 24px;
 		line-height: 121%;
@@ -127,8 +126,9 @@
 	}
 
 	.feature-arrow {
+		height: 40px;
 		transform: rotate(-90deg);
-		margin: 0;
+		margin: 0 auto;
 	}
 
 	.feature-desc {

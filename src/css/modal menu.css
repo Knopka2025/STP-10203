@@ -79,10 +79,48 @@
   fill: var(--main-yellow);
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 24px;
+  width: 68px;
+  /*height: 56px;*/
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
+}
+
+.back-to-top.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+}
+
+.back-to-top:hover {
+  /*border-color: var(--color-main-black);
+  background-color: var(--color-main-black);*/
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--color-main-btn-disabled);
+}
+
 @media only screen and (min-width: 1200px) {
   .modal-menu {
     display: none;
     z-index: 0;
     pointer-events: none;
+  }
+}
+
+@media only screen and (min-width: 1260px) {
+  .back-to-top {
+    left: calc(50% + (min(1168px, 100vw) / 2));
   }
 }
