@@ -9,11 +9,11 @@ let mobileSwiper = null;
 function initMobileSwiper() {
   const screenWidth = window.innerWidth;
 
-  if (screenWidth <= 375 && !mobileSwiper) {
+  if (screenWidth <= 1199 && !mobileSwiper) {
     mobileSwiper = new Swiper('.swiper-events', {
       modules: [Navigation, Pagination],
-      slidesPerView: 1.2,       //? 1 слайд + трохи наступного
-      spaceBetween: 12,         //? відстань між картинками
+      slidesPerView: 1.2,
+      spaceBetween: 12,
       speed: 350,
       watchOverflow: true,
       navigation: {
@@ -23,11 +23,11 @@ function initMobileSwiper() {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        bulletClass: 'custom-bullet',
-        bulletActiveClass: 'custom-bullet-active',
+        bulletClass: 'swiper-custom-bullet',
+        bulletActiveClass: 'swiper-custom-bullet-active',
       },
     });
-  } else if (screenWidth > 375 && mobileSwiper) {
+  } else if (screenWidth > 1199 && mobileSwiper) {
     mobileSwiper.destroy(true, true);
     mobileSwiper = null;
   }
