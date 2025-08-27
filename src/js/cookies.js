@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	const cookiesAccepted = localStorage.getItem("cookiesAccepted");
 
-	if (cookiesAccepted !== undefined) {
+	if (cookiesAccepted !== null) {
 		cookieBanner.classList.remove("js-is-open")
 	} else {
 		setTimeout(() => {
