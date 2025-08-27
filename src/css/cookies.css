@@ -53,13 +53,17 @@
 
 .cookie-button {
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 0%;
 	border: 1px solid #000;
 	border-radius: 15px;
 	padding: 20px 5px;
 	width: 144px;
 	height: 68px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
 
 .js-primary-button {
