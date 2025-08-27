@@ -8,7 +8,7 @@ btn_burger.addEventListener('click', (e) => {
 });
 
 mobile_menu.addEventListener('click', (e) => {
-	const dataLink = e.target.closest(".nav-link");
+	const dataLink = e.target.closest(".js-nav-link");
 
 	if (!dataLink) return;
 	openCloseModalMenu();

@@ -1,4 +1,4 @@
-.cookies {
+.js-cookies {
 	font-family: "Montserrat", sans-serif;
 	position: fixed;
 	bottom: 0;
@@ -14,13 +14,13 @@
 	transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibily 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.cookies.js-is-open {
+.js-cookies.js-is-open {
 	opacity: 1;
 	visibility: visible;
 	pointer-events: all;
 }
 
-.cookies .container {
+.js-cookies .container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

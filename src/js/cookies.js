@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-	const cookieBanner = document.querySelector(".cookies");
+	const cookieBanner = document.querySelector(".js-cookies");
 	const acceptBtn = cookieBanner.querySelector(".js-primary-button");
 	const declineBtn = cookieBanner.querySelector(".js-secondary-button");
 
-	const cookiesAccepted = JSON.parse(localStorage.getItem("cookiesAccepted"));
+	const cookiesAccepted = localStorage.getItem("cookiesAccepted");
 
-	if (cookiesAccepted) {
+	if (cookiesAccepted !== undefined) {
 		cookieBanner.classList.remove("js-is-open")
 	} else {
 		setTimeout(() => {

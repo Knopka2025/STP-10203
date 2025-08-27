@@ -1,9 +1,9 @@
 const swipeTargets = [
-  { selector: ".wrap-line-one", direction: "right" },
-  { selector: ".wrap-line-two", direction: "left" },   // другий стартує справа
-  { selector: ".wrap-line-three", direction: "right" },
-  { selector: ".wrap-line-four", direction: "left" },  // четвертий стартує справа
-  { selector: ".wrap-line-five", direction: "right" },
+  { selector: ".js-wrap-line-one", direction: "right" },
+  { selector: ".js-wrap-line-two", direction: "left" },   // другий стартує справа
+  { selector: ".js-wrap-line-three", direction: "right" },
+  { selector: ".js-wrap-line-four", direction: "left" },  // четвертий стартує справа
+  { selector: ".js-wrap-line-five", direction: "right" },
 ];
 
 window.addEventListener("scroll", () => {
@@ -22,7 +22,7 @@ window.addEventListener("scroll", () => {
       const progress =
         1 -
         Math.abs(rect.top + rect.height / 2 - windowHeight / 2) /
-          (windowHeight / 2);
+        (windowHeight / 2);
 
       // обмежуємо рух шириною лінії (90px мінус ширина картинки)
       const containerWidth = 90;
