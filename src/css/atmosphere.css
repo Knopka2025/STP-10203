@@ -1,14 +1,50 @@
-/* Базові стилі для мобільного свайпера */
-.slider-container-events {
-    position: relative;
+.js-wrap-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 26px;
 }
 
-/* Кнопки свайпера */
-.arrows {
+.js-section-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+    color: #000;
+}
+
+.js-section-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.45;
+    text-align: center;
+    color: #000;
+    padding-bottom: 26px;
+}
+
+.swiper-img {
+    border: 1px solid #000;
+    border-radius: 15px;
+    width: 200px;
+    height: 212px;
+}
+
+.js-event-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.45;
+    text-align: center;
+    color: #000;
+    width: 193px;
+    padding-top: 24px;
+}
+
+.swiper-arrows {
     display: flex;
     justify-content: center;
     gap: 194px;
-    /* Відстань між кнопками */
 }
 
 .swiper-events-button-prev,
@@ -25,8 +61,7 @@
     padding: 0;
 }
 
-.swiper-events-button-prev .arrow,
-.swiper-events-button-next .arrow {
+.swiper-arrow {
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -34,92 +69,17 @@
     border-right: 3px solid #222;
 }
 
-.swiper-events-button-prev .arrow {
+.swiper-events-button-prev .swiper-arrow {
     transform: rotate(-135deg);
-    /* ← */
 }
 
-.swiper-events-button-next .arrow {
+.swiper-events-button-next .swiper-arrow {
     transform: rotate(45deg);
-    /* → */
 }
 
-/* При ширині більше 375px ховаємо свайпер і стрілки */
-@media (min-width: 376px) {
-    .swiper-events {
-        display: block !important;
-        /* просто відображаємо всі слайди як список */
-    }
-
-    .arrows {
-        display: none;
-    }
-
-    .swiper-wrapper {
-        display: flex !important;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 24px;
-        /*padding-left: 16px;*/
-    }
-
-    .swiper-slide {
-        width: auto !important;
-
-    }
-
-    .swiper-pagination {
-        display: none !important;
-    }
-}
-
-/* Styles */
-.wrap-title {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 24px;
-    padding-bottom: 26px;
-}
-
-.section-title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.25;
-    text-align: center;
-    color: #000;
-}
-
-.section-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.45;
-    text-align: center;
-    color: #000;
-    padding-bottom: 26px;
-}
-
-.swiper-img {
-    border: 1px solid #000;
-    border-radius: 15px;
-
-    width: 200px;
-    height: 212px;
-}
-
-.event-text {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.45;
-    text-align: center;
-    color: #000;
-    width: 193px;
-    padding-top: 24px;
-}
-
+/* Desktop */
 @media screen and (min-width: 1200px) {
-    .visuals-section {
+    .js-visuals-section {
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -127,29 +87,39 @@
         margin: auto;
     }
 
-
-    .section-title {
-        font-weight: 600;
+    .js-section-title {
         font-size: 32px;
         line-height: 1.3125;
-        text-align: center;
-        color: #000;
+        padding-bottom: 0;
     }
 
-    .section-subtitle {
-        font-weight: 500;
+    .js-section-subtitle {
         font-size: 24px;
         line-height: 1.25;
-        color: #000;
         padding-bottom: 40px;
     }
 
-    .events-list {
+    .js-events-list {
         gap: 64px;
-
     }
 
-    .event-text {
+    .js-event-text {
         margin-bottom: 40px;
+    }
+
+    .swiper-arrows,
+    .swiper-pagination {
+        display: none !important;
+    }
+
+    .swiper-wrapper {
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 24px;
+        padding-left: 16px;
+    }
+
+    .swiper-slide {
+        width: auto !important;
     }
 }
